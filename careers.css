@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+  background: #5D5C5E;
+  font-family: 'Raleway';
+}
+                  /*----navigation----*/
+
+#navigation {
+    background-color: black;;
+    height: 14vh;
+}
+ul .logo {
+    float: left;
+}
+.ham {
+    display: none;
+}
+.logo-image {
+    width:120px;
+    margin-left: 50px;
+}
+nav {
+    margin-right: 100px;
+}
+nav li{
+    float: right;
+    list-style: none;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: white;
+}
+li.active {
+    background-color: rgb(248, 74, 6);
+}
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    grid-auto-rows: auto;
+    margin: 0 15% 0 15%;
+    color: black;
+}
+
+#main {
+    padding-top: 8%;
+    height: auto;
+    padding-bottom: 10%;
+}
+.one {
+    background-image: url(/img/res.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.two {
+    text-align: center;
+    padding-top: 2.1em;
+    background-color: white;
+}
+.two h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+.two p{
+    font-size: 1.09em;
+    margin-top: 3%;
+}
+form {
+    margin: 5% 10% 5% 10%;
+}
+input{
+    width: 100%;
+    margin: 20px 0;
+    background: rgba(0,0,0,0);
+    border: none;
+    color: black;
+    border-bottom: 1px solid #0078ff;
+}
+button{
+    padding: 20px 32px;
+    font-size: 16px;
+    background: rgb(248, 74, 6);
+    border: none;
+    border-radius: 4px;
+    margin-top: 30px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+::-webkit-input-placeholder{
+    color:#0000;
+    font-size: 12px;
+    letter-spacing: 12px;
+} 
+.Experience{
+    width: 100%;
+    margin: 20px 0;
+    background: rgba(0,0,0,0);
+    border: none;
+    color: black;
+    border-bottom: 1px solid #0078ff;
+}
+.opt {
+    color:#0000;
+    font-size: 12px;
+    letter-spacing: 12px;
+}
+textarea{
+    width: 100%;
+    height: auto;
+    border: 1px solid #0078ff;
+}
+label {
+    text-align: left;
+}
+/*mini footer*/
+
+#mini-foot {
+    padding-left: 8%;
+    height: 20vh;
+    background: white;
+    margin-bottom: 0;
+    color: black;
+}
+.icon {
+    width: 20px;
+    padding-left: 5%;
+}
+#content-five {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 40px 5px 40px 5px;
+    max-width: 1140px;
+    /* margin: 0 auto; */
+    margin-left: 8%;
+    grid-auto-rows: 180px;
+    grid-gap: 10px;
+}
+.content h5 {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.content p {
+    margin-top: 8%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#copy {
+    background-color: rgb(22, 21, 21);
+    color: white;
+    height: 20vh;
+    text-align: center;
+    
+}
+.copy {
+    padding-top: 30px;
+    font-size: 20px;
+}
+.mini-copy {
+    font-size: 16px;
+}
+

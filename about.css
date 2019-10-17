@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background : #fff;
+    font-family: 'Raleway';
+}
 #navigation {
     background-color: black;;
     height: 14vh;
@@ -33,3 +37,336 @@ nav li a {
     text-decoration: none;
     color: white;
 }
+
+/*header*/
+#header {
+    height: 60vh;
+    background-image: linear-gradient(to right, 
+    rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)), url(./img/head.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.text-wrapper{
+    color: white;
+    font-weight: bold;
+    padding-top: 10%;
+    text-align: center;
+    margin-left: 1.8em;
+}
+
+.about-text {
+    font-size: 3.5em;
+}
+.pre-about {
+    font-size: 1em;
+    font-weight: 700;
+    margin-left: 1em;
+
+}
+
+/* client-content */
+
+#client-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    grid-gap: 10%;
+    margin-left: 15%;
+    margin-right: 12%;
+    padding-top: 10%;
+}
+.client-content {
+    width: 50%;
+    text-align: left;
+}
+.client-text {
+    font-size: 1em;
+    line-height: 1.25em;
+}
+
+.client-img {
+    width: 340px;
+    text-align: center;
+}
+/*content*/
+#aboutus {
+    height: auto;
+    padding-bottom: 10%;
+    background-color: #f1f1f1;
+}
+#aboutus-text {
+    text-align: center;
+    padding-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#aboutus-text .main-text {
+    margin-bottom: 3%;
+}
+#whyus {
+    height: auto;
+    padding-bottom: 5%;
+}
+#whyus-text {
+    text-align: center;
+    padding-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#whyus-text .main-text {
+    margin-bottom: 3%;
+}
+#sub-header {
+    height: auto;
+}
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    grid-auto-rows: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    grid-gap: 10%;
+}
+.vision {
+    display: block;
+}
+
+.mission {
+    display: block;
+}
+
+.main-text {
+    font-weight: 700;
+    font-size: 1.7em;
+    text-align: center;
+    padding-bottom: 2%;
+}
+  
+.sub-text {
+    font-size: 1em;
+}
+   
+#others {
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#core-values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    grid-auto-rows: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    grid-gap: 10%;
+}
+
+.ourvalues {
+    padding: 3%
+}
+
+.ourvalues h2 {
+    /* text-align: center; */
+    color: rgb(248, 74, 6);
+    font-size: 1.1em;
+    margin-bottom: 5%;
+}
+
+.values-header {
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.values-content {
+    /* text-align: center; */
+    font-size: 1em;
+}
+
+#goal {
+    height: auto;
+    background-color: #f1f1f1;
+    padding-bottom: 3%;
+}
+
+.goal-header {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 15%;
+}
+
+#goal-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    grid-gap: 10%;
+    margin-left: 15%;
+    margin-right: 12%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.business {
+    width: 320px;
+    text-align: center;
+    border: 2px solid rgb(248, 74, 6);
+    border-radius: 20px;
+}
+
+.comp {
+    width: 330px;
+    text-align: center;
+    border: 2px solid rgb(248, 74, 6);
+    border-radius: 20px;
+    margin-top: 12%;
+}
+
+.growth {
+    width: 330px;
+    text-align: center;
+    border: 2px solid rgb(248, 74, 6);
+    border-radius: 20px;
+}
+
+.text {
+    padding-top: 5%;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.growth-header {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 20%;
+}
+
+.growth-text {
+    padding-top: 5%;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.comp-header {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 5%;
+}
+
+.comp-text {
+    padding-top: 5%;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.goal-text {
+    margin-top: 1%;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+#goal-content ul li {
+    line-height: 1.5em;
+}
+/* body */
+#b-o-d {
+    height: auto;
+    padding-bottom: 10%;
+    background-color: #f1f1f1;
+}
+.profile-main {
+   padding-top: 2%;
+   padding-bottom: 5%;
+   text-align: center;
+   font-size: 1.7em;
+}
+#flex-content {
+    /* display: grid; */
+    display: flex;
+    max-width: 100%;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3rem; */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.profile-content {
+    padding: 2rem;    
+}
+.profile-desc {
+    font-size: 1.1em;
+    margin-top: 1.5em;
+    padding-left: 4%;
+    text-align: left;
+    border-left: 2px solid rgb(248, 74, 6);
+}
+.client {
+    font-size: 0.98em;
+    text-align: left;
+    margin-top: 6%;
+    color: #8d8b8b;
+    margin-left: 3%;
+}
+.prof-img {
+    border: 2px solid rgb(248, 74, 6);
+    border-radius: 50%;
+    text-align: center;
+    width: 100px;
+}
+/*mini footer*/
+
+#mini-foot {
+    /* margin-left: 8%; */
+    height: 20vh;
+    margin-bottom: 0;
+    color: black;
+    background-color: #f7f7f7;
+}
+
+#content-five {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 25px 5px 20px 5px;
+    max-width: 100%;
+    margin-left: 8%;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+}
+
+.content h5 {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content p {
+    margin-top: 8%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.icon {
+    width: 20px;
+    padding-left: 5%;
+}
+
+#copy {
+    background-color: rgb(22, 21, 21);
+    color: white;
+    height: 20vh;
+    text-align: center;
+    
+
+}
+.copy {
+    padding-top: 2em;
+    font-size: 1.05em;
+}
+.mini-copy {
+    font-size: 1em;
+}
+
+

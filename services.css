@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background : #fff;
+    font-family: 'Raleway';
+}
+#navigation {
+    background-color: black;;
+    height: 14vh;
+}
+ul .logo {
+    float: left;
+}
+.logo-image {
+    width:120px;
+    margin-left: 50px;
+}
+nav {
+    margin-right: 100px;
+}
+nav li{
+    float: right;
+    list-style: none;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: white;
+}
+li.active {
+    background-color: rgb(248, 74, 6);
+}
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+                        /* services */
+
+#content-three {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* display: flex;
+    flex-wrap: wrap; */
+    padding: 40px 5px 40px 5px;
+    max-width: 100%;
+    /*justify-content: space-evenly; */
+    grid-auto-rows: auto;
+    grid-gap: 3%;
+    margin-right: 13%;
+    margin-left: 13%;
+}
+
+.offer {
+    max-width: 300px;
+    max-height: 350px;
+    margin: 20px 0;
+}
+.head {
+    text-transform: uppercase;
+    margin-bottom: 3%;
+}
+.services-header {
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 4%;
+    color: rgb(248, 74, 6);
+}
+.offer-image {
+    width: 100%;
+    margin-bottom: 5%;
+    object-fit: cover;
+}
+.offer-image-diff {
+    width: 100%;
+    margin-bottom: 5%;
+    object-fit: cover;
+    height: 201px;
+}
+
+/* sub header */
+
+#sub-header {
+    height: 30vh;
+    background-image: linear-gradient(to right, 
+    rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/construct.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#content-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* display: flex;
+    flex-wrap: wrap; */
+    padding: 40px 5px 40px 5px;
+    max-width: 100%;
+    /*justify-content: space-evenly; */
+    grid-auto-rows: auto;
+    grid-gap: 3%;
+    margin-right: 20%;
+    margin-left: 25%;
+}

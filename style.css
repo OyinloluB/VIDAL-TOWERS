@@ -60,7 +60,7 @@ nav .flex-content a {
 }
 .side-nav {
     height: auto;
-    /* display: none; */
+    display: none;
     position: fixed;
     right: 0;
     z-index: 100;
@@ -141,7 +141,7 @@ button {
 
 #values {
     background-color: white;
-    height: 150vh;
+    height: auto;
 }
 #content {
     /* display: grid;
@@ -252,14 +252,13 @@ ion-icon {
 }
 .components {
     margin-bottom: 20px;
-    transform: translateY(7px);
     text-align: center;
     width:  285px;
   }
-
-.components.fade-in {
-    opacity: 1;
-    transition: all 1s ease-out;
+.components-not {
+    margin-bottom: 20px;
+    text-align: center;
+    width:  285px;
 }
 .comp-text {
     color: black;
@@ -312,17 +311,11 @@ input.active {
 }
 
 #content-three {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* display: flex;
-    flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
     padding: 40px 5px 40px 5px;
     max-width: 100%;
-    /*justify-content: space-evenly; */
-    grid-auto-rows: auto;
-    grid-gap: 3%;
-    margin-right: 13%;
-    margin-left: 13%;
+    justify-content: space-evenly;
 }
 .offer {
     max-width: 300px;
@@ -359,14 +352,11 @@ input.active {
     background-size: cover;
 }
 #content-four {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     padding: 40px 5px 40px 5px;
     max-width: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
-    grid-auto-rows: auto;
-    grid-gap: 3%;
+    justify-content: space-evenly;
 }
 .diff {
     background-color: transparent;
@@ -382,6 +372,17 @@ input.active {
     color: white;
     margin-top: 3%;
 }
+.diff-icon-not .sub-text {
+    color: white;
+    margin-top: 3%;
+}
+.diff-icon-not ion-icon{
+    width: 50px;
+    height: 50px;
+}
+.diff-icon-not {
+    text-align: center;
+}
 
                   /*----mini-foot----*/
 
@@ -390,15 +391,11 @@ input.active {
     margin-bottom: 0;
 }
 #content-five {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     padding: 40px 5px 40px 5px;
     max-width: 100%;
-    /* margin: 0 auto; */
-    margin-left: 12%;
-    margin-right: 12%;
-    grid-auto-rows: auto;
-    grid-gap: 3%;
+    justify-content: space-evenly;
 }
 .content {
     text-align: center;
@@ -418,15 +415,22 @@ input.active {
 #copy {
     background-color: rgb(22, 21, 21);
     color: white;
-    height: 20vh;
+    height: auto;
+    padding-top: 5%;
     text-align: center;
-    
+    padding-bottom: 10%;
 }
 .one {
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
-    /* margin: 10px 0 !important; */
+    padding-top: 5%;
+}
+.one-not {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
 }
 .copy {
     padding-top: 30px;
@@ -494,12 +498,12 @@ input.active {
 }
 
 @media screen and (max-width: 768px) {
-    /* .side-nav_display {
-        display: block;
-    } */
+    
     .side-nav {
+        display: none;
+    }
+    .side-nav .open{
         display: block;
-
     }
     .flex {
         display: none;
@@ -508,4 +512,29 @@ input.active {
         display: block;
         padding-right: 15px;
     }
+    .one-not {
+        padding-top: 6%;
+    }
+    .components {
+        padding-top: 6%;
+    }
+}
+
+@media screen and (max-width: 411px){
+    .diff-icon-not {
+        margin-top: 8%;
+    }
+    .content {
+        padding: 5%;
+        width: 100%;
+    }
+    .content p{
+        margin-top: 3%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .components-not {
+        padding-top: 8%;
+    }
+
 }

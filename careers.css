@@ -3,50 +3,97 @@
     padding: 0;
 }
 body {
-  background: #5D5C5E;
+  background: white;
   font-family: 'Raleway';
 }
                   /*----navigation----*/
 
 #navigation {
-    background-color: black;;
-    height: 14vh;
+    background-color: black;
+    height: auto;
 }
-ul .logo {
-    float: left;
+.flex-contain {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
-.ham {
-    display: none;
-}
-.logo-image {
-    width:120px;
-    margin-left: 50px;
-}
-nav {
-    margin-right: 100px;
-}
-nav li{
-    float: right;
-    list-style: none;
+
+.flex {
     text-transform: uppercase;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 35px;
     padding-bottom: 35px;
-    color: white;
+    color: white;  
 }
-li.active {
-    background-color: rgb(248, 74, 6);
-}
-nav li a {
+.flex a {
     text-decoration: none;
     color: white;
 }
+.active{
+    background-color: rgb(248, 74, 6);
+}
+.logo-image {
+    width: 150px;
+} 
+.logo {
+    margin-right: auto;
+}
+.flex-content.active {
+    background-color: rgb(248, 74, 6);
+}
+nav .flex-content a {
+    text-decoration: none;
+    color: white;
+}
+.burger {
+    display: none;
+}
+.burger div {
+    background-color: rgb(248, 74, 6);
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+
+}
+.side-nav {
+    height: auto;
+    display: none;
+    position: fixed;
+    right: 0;
+    z-index: 100;
+    background: black;
+}
+.side-contain {
+    right: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.800s ease;
+}
+.side a {
+    text-decoration: none;
+    color: white;
+}
+
+.side {
+    text-transform: uppercase;
+    padding-left: 15px;
+    text-align: center;
+    font-size: 1.3em;
+    flex: 1;
+    padding-right: 15px;
+    padding-top: 10%;
+    padding-bottom: 15px;
+    color: black;  
+}
+
 #content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 5px 40px 5px;
     max-width: 100%;
-    grid-auto-rows: auto;
     margin: 0 15% 0 15%;
     color: black;
 }
@@ -54,18 +101,13 @@ nav li a {
 #main {
     padding-top: 8%;
     height: auto;
-    padding-bottom: 10%;
-}
-.one {
-    background-image: url(/img/res.png);
-    background-size: cover;
-    background-position: center;
+    padding-bottom: 25%;
 }
 
 .two {
     text-align: center;
     padding-top: 2.1em;
-    background-color: white;
+    background-color: #f1f1f1;
 }
 .two h1 {
     font-size: 2em;
@@ -74,6 +116,8 @@ nav li a {
 .two p{
     font-size: 1.09em;
     margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 form {
     margin: 5% 10% 5% 10%;
@@ -126,9 +170,9 @@ label {
 /*mini footer*/
 
 #mini-foot {
-    padding-left: 8%;
-    height: 20vh;
-    background: white;
+    /* padding-left: 8%; */
+    height: auto;
+    background: #f1f1f1;
     margin-bottom: 0;
     color: black;
 }
@@ -137,14 +181,14 @@ label {
     padding-left: 5%;
 }
 #content-five {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     padding: 40px 5px 40px 5px;
-    max-width: 1140px;
-    /* margin: 0 auto; */
-    margin-left: 8%;
-    grid-auto-rows: 180px;
-    grid-gap: 10px;
+    max-width: 100%;
+    justify-content: space-evenly;
+}
+.content {
+    text-align: center;
 }
 .content h5 {
     font-weight: bold;
@@ -158,9 +202,9 @@ label {
 #copy {
     background-color: rgb(22, 21, 21);
     color: white;
-    height: 20vh;
+    height: auto;
     text-align: center;
-    
+    padding-bottom: 10%;
 }
 .copy {
     padding-top: 30px;
@@ -168,5 +212,35 @@ label {
 }
 .mini-copy {
     font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .side-nav {
+        display: none;
+    }
+    .side-nav .open{
+        display: block;
+    }
+    .flex {
+        display: none;
+    }
+    .burger {
+        display: block;
+        padding-right: 15px;
+    }
+    .content {
+        padding: 10%;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 411px){
+    .content {
+        padding: 5%;
+        width: 100%;
+    }
+    .content p{
+        margin-top: 3%;
+    }
 }
 

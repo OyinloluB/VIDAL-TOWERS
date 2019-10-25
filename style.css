@@ -1075,8 +1075,11 @@ input.active {
         height: auto;
     }
     .side-nav {
-        display: block;
-    }
+				display: block;
+				position: absolute;
+				z-index: 100;		
+				width: 100%		
+		}
     .open{
         display: block;
     }

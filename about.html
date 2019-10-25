@@ -25,15 +25,6 @@
     </nav>
 </section>
 
-<section class="side-nav">
-    <nav class="side-contain">
-        <div class="side side-1 active"><a href="index.html">Home</a></div>
-        <div class="side side-2"><a href="about.html">About</a></div> <!---company profile, Board of Directors, Mission and Vision --->
-        <div class="side side-3"><a href="services.html">Services</a></div> 
-        <div class="side side-4"><a href="careers.html">Careers</a></div> 
-        <div class="side side-5"><a href="contact.html">Contact</a></div>
-    </nav>
-</section>
 
 <section id="header">
 
@@ -348,6 +339,30 @@
        </div> 
        <div class="mini-copy">Vidaltowers</div>
     </section>
+
+    <section class="side-nav">
+        <nav class="side-contain">
+            <div class="side side-1 active"><a href="index.html">Home</a></div>
+            <div class="side side-2"><a href="about.html">About</a></div> <!---company profile, Board of Directors, Mission and Vision --->
+            <div class="side side-3"><a href="services.html">Services</a></div> 
+            <div class="side side-4"><a href="careers.html">Careers</a></div> 
+            <div class="side side-5"><a href="contact.html">Contact</a></div>
+        </nav>
+    </section>
+    
+
+    <script>
+        const navBar = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.side-nav');
+
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('.open');
+            });
+        }
+
+        navBar();
+</script>
     </body>
     </html>
 

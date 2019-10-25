@@ -55,8 +55,8 @@ nav .flex-content a {
 
 }
 .side-nav {
-    height: auto;
-    display: none;
+    height: 100vh;
+    display: block;
     position: fixed;
     right: 0;
     z-index: 100;
@@ -462,7 +462,7 @@ nav .flex-content a {
     .side-nav {
         display: none;
     }
-    .side-nav .open{
+    .open{
         display: block;
     }
     .flex {
@@ -482,9 +482,15 @@ nav .flex-content a {
         margin-left: 15%;
         margin-right: 15%;
     }
+    .components {
+        padding-top: 6%;
+    }
+    .components-not{
+        padding-top: 6%;
+    }
 }
 
-@media screen and (max-width: 411px){
+@media screen and (max-width: 510px){
 
     .mission, .vision{
         margin-left: 10%;

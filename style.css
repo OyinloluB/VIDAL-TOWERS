@@ -371,10 +371,12 @@ input.active {
 .diff-icon .sub-text {
     color: white;
     margin-top: 3%;
+    padding-top: 15%;
 }
 .diff-icon-not .sub-text {
     color: white;
     margin-top: 3%;
+    padding-top: 15%;
 }
 .diff-icon-not ion-icon{
     width: 50px;
@@ -498,15 +500,20 @@ input.active {
 }
 
 @media screen and (max-width: 768px) {
-    
-    .side-nav {
-        display: none;
+    #offer {
+        height: auto;
     }
-    .side-nav .open{
+    .side-nav {
+        display: block;
+    }
+    .open{
         display: block;
     }
     .flex {
         display: none;
+    }
+    .flex.display {
+        display: block;
     }
     .burger {
         display: block;
@@ -518,9 +525,22 @@ input.active {
     .components {
         padding-top: 6%;
     }
+    .components-not{
+        padding-top: 6%;
+    }
 }
-
-@media screen and (max-width: 411px){
+@media screen and (max-width: 510px){
+    #offers {
+        height: auto;
+    }
+    .intro-header {
+        font-size: 1em;
+        padding-right: 5%
+    }
+    .main-header {
+        font-size: 1.8em;
+        padding-right: 5%
+    }
     .diff-icon-not {
         margin-top: 8%;
     }
@@ -531,10 +551,21 @@ input.active {
     .content p{
         margin-top: 3%;
     }
+    .diff-icon {
+        width: 100%;
+        padding: 10%;
+    }
+    .sub-text {
+        font-size: 0.9rem;
+        padding-top: 4%;
+    }
+    .diff-icon-not {
+        width: 100%;
+    }
 }
-@media screen and (max-width: 1024px){
+/* @media screen and (max-width: 1024px){
     .components-not {
         padding-top: 8%;
     }
 
-}
+} */

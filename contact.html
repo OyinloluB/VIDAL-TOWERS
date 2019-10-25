@@ -6,16 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="contact.css" rel="stylesheet">
+        <title>Contact us</title>
     </head>
     <body>
 <section id="navigation">
     <nav class="flex-contain">
         <div class="logo"><img src="./img/logo3.5.png" class="logo-image" alt=""></div>
-        <div class="flex flex-1 active"><a href="index.html">Home</a></div>
+        <div class="flex flex-1"><a href="index.html">Home</a></div>
         <div class="flex flex-2"><a href="about.html">About</a></div> <!---company profile, Board of Directors, Mission and Vision --->
         <div class="flex flex-3"><a href="services.html">Services</a></div> 
         <div class="flex flex-4"><a href="careers.html">Careers</a></div> 
-        <div class="flex flex-5"><a href="contact.html">Contact</a></div>
+        <div class="flex flex-5  active"><a href="contact.html">Contact</a></div>
         <div class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -26,11 +27,11 @@
 
 <section class="side-nav">
     <nav class="side-contain">
-        <div class="side side-1 active"><a href="index.html">Home</a></div>
+        <div class="side side-1"><a href="index.html">Home</a></div>
         <div class="side side-2"><a href="about.html">About</a></div> <!---company profile, Board of Directors, Mission and Vision --->
         <div class="side side-3"><a href="services.html">Services</a></div> 
         <div class="side side-4"><a href="careers.html">Careers</a></div> 
-        <div class="side side-5"><a href="contact.html">Contact</a></div>
+        <div class="side side-5  active"><a href="contact.html">Contact</a></div>
     </nav>
 </section>
 
@@ -41,13 +42,13 @@
         <h1>Contact us</h1>
         <p>Leave a message and we will attend to you immediately.</p>
 
-        <form action="access.php" method="POST">
+        <form name="contact" netlify>
             
-            <input type="text" placeholder="Full-name" id="fullname" required=""/>
-            <input type="text" placeholder="Email" id="email" required=""/>
-            <input type="text" placeholder="Message" id="message" required=""/>
+            <input type="text" name="full-name" placeholder="Full-name" id="fullname" required=""/>
+            <input type="text" name="email" placeholder="Email" id="email" required=""/>
+            <input type="text" name="email" placeholder="Message" id="message" required=""/>
         
-        <button type="submit" name=""submit>Let's Chat</button>
+        <button type="submit" name="submit">Let's Chat</button>
         
         </form>
         </div>

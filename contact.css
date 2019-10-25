@@ -123,6 +123,7 @@ form {
 input{
     width: 100%;
     margin: 20px 0;
+    padding: 20px;
     background: rgba(0,0,0,0);
     border: none;
     color: black;
@@ -140,7 +141,7 @@ button{
 
 }
 ::-webkit-input-placeholder{
-    color:#0000;
+    color:black;
     font-size: 12px;
     letter-spacing: 12px;
 } 
@@ -148,8 +149,7 @@ button{
 /*mini footer*/
 
 #mini-foot {
-    padding-left: 8%;
-    height: 20vh;
+    height: auto;
     background: #f1f1f1;
     margin-bottom: 0;
     color: black;
@@ -158,20 +158,22 @@ button{
     width: 20px;
     padding-left: 5%;
 }
+
 #content-five {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     padding: 40px 5px 40px 5px;
-    max-width: 1140px;
-    /* margin: 0 auto; */
-    margin-left: 8%;
-    grid-auto-rows: 180px;
-    grid-gap: 10px;
+    max-width: 100%;
+    justify-content: space-evenly;
+
 }
 .content h5 {
     font-weight: bold;
     font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.content {
+    text-align: center;
 }
 .content p {
     margin-top: 8%;
@@ -208,17 +210,28 @@ button{
         padding-right: 15px;
     }
     .content {
-        padding: 10%;
-        width: 100%;
+        padding: 5%;
+        width: 25%;
+    }
+    #content {
+        margin-left: 5%;
+        margin-right: 5%;;
+    }
+    .content p{
+        margin-top: 2%;
     }
 }
-@media screen and (max-width: 411px){
+@media screen and (max-width: 510px){
     .content {
         padding: 5%;
         width: 100%;
     }
     .content p{
         margin-top: 3%;
+    }
+    #content {
+        margin-left: 5%;
+        margin-right: 5%;;
     }
 }
 

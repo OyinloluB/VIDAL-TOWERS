@@ -90,22 +90,25 @@ nav .flex-content a {
 }
 
 #content {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     padding: 40px 5px 40px 5px;
     max-width: 100%;
-    margin: 0 15% 0 15%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
     color: black;
 }
 
 #main {
-    padding-top: 8%;
     height: auto;
     padding-bottom: 25%;
 }
 
 .two {
     text-align: center;
+    padding-bottom: 5%;
+    height: auto;
     padding-top: 2.1em;
     background-color: #f1f1f1;
 }
@@ -125,6 +128,7 @@ form {
 input{
     width: 100%;
     margin: 20px 0;
+    padding: 20px;
     background: rgba(0,0,0,0);
     border: none;
     color: black;
@@ -142,7 +146,7 @@ button{
 
 }
 ::-webkit-input-placeholder{
-    color:#0000;
+    color: black;
     font-size: 12px;
     letter-spacing: 12px;
 } 
@@ -151,11 +155,9 @@ button{
     margin: 20px 0;
     background: rgba(0,0,0,0);
     border: none;
-    color: black;
     border-bottom: 1px solid #0078ff;
 }
 .opt {
-    color:#0000;
     font-size: 12px;
     letter-spacing: 12px;
 }
@@ -229,12 +231,15 @@ label {
         display: block;
         padding-right: 15px;
     }
+    #content {
+        margin: 10%;
+    }
     .content {
         padding: 10%;
-        width: 100%;
+        width: 25%;
     }
 }
-@media screen and (max-width: 411px){
+@media screen and (max-width: 510px){
     .content {
         padding: 5%;
         width: 100%;

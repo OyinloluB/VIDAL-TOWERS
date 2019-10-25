@@ -12,10 +12,10 @@
 <section id="navigation">
     <nav class="flex-contain">
         <div class="logo"><img src="./img/logo3.5.png" class="logo-image" alt=""></div>
-        <div class="flex flex-1 active"><a href="index.html">Home</a></div>
+        <div class="flex flex-1"><a href="index.html">Home</a></div>
         <div class="flex flex-2"><a href="about.html">About</a></div> <!---company profile, Board of Directors, Mission and Vision --->
         <div class="flex flex-3"><a href="services.html">Services</a></div> 
-        <div class="flex flex-4"><a href="careers.html">Careers</a></div> 
+        <div class="flex flex-4 active"><a href="careers.html">Careers</a></div> 
         <div class="flex flex-5"><a href="contact.html">Contact</a></div>
         <div class="burger">
             <div class="line1"></div>
@@ -27,10 +27,10 @@
 
 <section class="side-nav">
     <nav class="side-contain">
-        <div class="side side-1 active"><a href="index.html">Home</a></div>
+        <div class="side side-1"><a href="index.html">Home</a></div>
         <div class="side side-2"><a href="about.html">About</a></div> <!---company profile, Board of Directors, Mission and Vision --->
         <div class="side side-3"><a href="services.html">Services</a></div> 
-        <div class="side side-4"><a href="careers.html">Careers</a></div> 
+        <div class="side side-4  active"><a href="careers.html">Careers</a></div> 
         <div class="side side-5"><a href="contact.html">Contact</a></div>
     </nav>
 </section>
@@ -41,14 +41,13 @@
     <h1>Get hired?</h1>
     <p>Fill the form below!</p>
 
-    <form action="access.php" method="POST">
-        <input type="text" placeholder="Full-name" id="fullname" required=""/>
-        <input type="text" placeholder="Email" id="email" required=""/>
-        <input type="text" placeholder="Message" id="message" required=""/>
-        <input type="text" placeholder="Phone-number" id="number" required="">
+    <form name="careers" netlify>
+        <input type="text" name="full-name" placeholder="Full-name" id="fullname" required=""/>
+        <input type="text" name="email" placeholder="Email" id="email" required=""/>
+        <input type="text" name="phone-number" placeholder="Phone-number" id="number" required="">
         
         
-        <select class ="Experience">
+        <select class ="Experience" name="interest" required="">
         <option class= "opt" value="AOI">Area of interest</option>
         <option class= "opt" value="Account">Account</option>
         <option class= "opt" value="Human Resource">Human Resource</option>
@@ -58,15 +57,15 @@
                         </select>
         <br><br>
         
-        <input type="text" name="name" placeholder="Other..." id="name">
+        <input type="text" name="other" placeholder="Other..." id="name">
         <br><br>
         
         <label>Tell us about yourself...</label>
-        <textarea name="message"  rows="10" cols="30">
+        <textarea name="message" name="message" rows="10" cols="30" required="">
                     
         </textarea>
     
-    <button type="submit" name=""submit>Submit</button>
+    <button type="submit" name="submit">Submit</button>
     
     </form>
     </div>
